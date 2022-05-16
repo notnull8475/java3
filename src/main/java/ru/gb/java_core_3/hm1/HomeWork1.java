@@ -9,13 +9,11 @@ import java.util.Arrays;
 
 public class HomeWork1 {
 
-    public Object[] swaper(Object[] arr, int a, int b){
+    public void swaper(Object[] arr, int a, int b){
         Object t = arr[a];
         arr[a] = arr[b];
         arr[b] = t;
-        return arr;
     }
-
 
 //    2. Написать метод, который преобразует массив в ArrayList;
     public <T> ArrayList<T> arrToList (T[] arr) {
@@ -29,12 +27,12 @@ public class HomeWork1 {
         Box<Orange> orangeBox1 = new Box<>("orangeBox1");
 
         for (int i = 0; i < 10; i++) {
-            appleBox.addFruid(new Apple());
-            orangeBox.addFruid(new Orange());
+            appleBox.addFruit(new Apple());
+            orangeBox.addFruit(new Orange());
         }
         for (int i = 0; i < 11; i++) {
-            appleBox1.addFruid(new Apple());
-            orangeBox1.addFruid(new Orange());
+            appleBox1.addFruit(new Apple());
+            orangeBox1.addFruit(new Orange());
         }
 
         System.out.println(appleBox.compare(orangeBox));
